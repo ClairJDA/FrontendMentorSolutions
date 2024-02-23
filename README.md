@@ -3,6 +3,7 @@
 This is may collection of solutions
 
 - [Recipe Page](./recipe-page-main)
+- [Blog Preview Card](./blog-preview-card-main)
 - [Age Calculator](./age-calculator-app-main)
 
 ## Author
