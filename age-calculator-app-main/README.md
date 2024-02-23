@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot preview for the Age calculator app - Desktop](./screenshot/desktop-preview.png)
+![Screenshot preview for the Age calculator app - Desktop](./screenshot/desktop-preview.jpg)
 ![Screenshot preview for the Age calculator app - Mobile](./screenshot/mobile-preview.jpg)
 
 ### Link
