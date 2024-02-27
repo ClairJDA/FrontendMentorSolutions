@@ -6,7 +6,8 @@ This is may collection of solutions
 - [Blog Preview Card](./blog-preview-card-main)
 - [Social links Profile](./social-links-profile-main)
 - [NFT Preview Card](./nft-preview-card-component-main)
-- [Four Feature Card](./four-card-feature-section-master/)
+- [Four Feature Card](./four-card-feature-section-master)
+- [Profile Card](./profile-card-component-main)
 - [Age Calculator](./age-calculator-app-main)
 
 ## Author
