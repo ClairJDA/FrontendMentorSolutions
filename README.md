@@ -1,6 +1,6 @@
 # My FrontendMentor Solutions
 
-This is may collection of solutions
+This is my collection of solutions
 
 - [Recipe Page](./recipe-page-main)
 - [Blog Preview Card](./blog-preview-card-main)
@@ -8,6 +8,7 @@ This is may collection of solutions
 - [NFT Preview Card](./nft-preview-card-component-main)
 - [Four Feature Card](./four-card-feature-section-master)
 - [Profile Card](./profile-card-component-main)
+- [Article Preview Card](./article-preview-component-master)
 - [Age Calculator](./age-calculator-app-main)
 
 ## Author
