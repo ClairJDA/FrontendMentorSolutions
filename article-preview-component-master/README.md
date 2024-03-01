@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot preview for desktop-active version](./screenshot/desktop-active.JPG.jpg)
+![screenshot preview for desktop-active version](./screenshot/desktop-active.JPG)
 ![screenshot preview for mobile](./screenshot/mobile.JPG)
 ![screenshot preview for mobile-active](./screenshot/mobile-active.JPG)
 
