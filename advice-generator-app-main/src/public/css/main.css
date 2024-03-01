@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  color: hsl(193, 38%, 86%);
+  background-color: hsl(218, 23%, 16%);
+}
+
+.container .card {
+  position: relative;
+  max-width: 350px;
+  margin: auto;
+  padding: 1.3rem;
+  padding-bottom: 3rem;
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  color: hsl(193, 38%, 86%);
+  background-color: hsl(217, 19%, 24%);
+}
+.container .card h1 {
+  color: hsl(150, 100%, 66%);
+}
+.container .card p {
+  margin: 1rem 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+.container .card picture {
+  margin: 1rem 0;
+}
+.container .card button {
+  position: absolute;
+  right: 42%;
+  bottom: -8%;
+  padding: 15px;
+  border-radius: 50%;
+  border: 0px;
+  background-color: hsl(150, 100%, 66%);
+}
+.container .card button:hover {
+  box-shadow: hsl(150, 100%, 66%) 0px 10px 70px 4px;
+}
+.container .attribution {
+  margin: 3rem auto;
+}
+
+@media (min-width: 540px) {
+  .card {
+    max-width: 500px;
+    margin: 3rem auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

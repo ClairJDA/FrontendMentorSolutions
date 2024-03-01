@@ -9,6 +9,7 @@ This is my collection of solutions
 - [Four Feature Card](./four-card-feature-section-master)
 - [Profile Card](./profile-card-component-main)
 - [Article Preview Card](./article-preview-component-master)
+- [Advice Generator App](./advice-generator-app-main)
 - [Age Calculator](./age-calculator-app-main)
 
 ## Author

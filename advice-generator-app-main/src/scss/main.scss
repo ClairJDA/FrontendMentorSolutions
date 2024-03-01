@@ -1,0 +1,76 @@
+$light-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+$font-stack: "Manrope", sans-serif;;
+$font-size-quote: 28px;
+$font-bold: 800;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body{
+  color: $light-cyan;
+  background-color: $dark-blue;
+}
+.container{
+  .card{
+    position: relative;
+    max-width: 350px;
+    margin: auto;
+    padding: 1.3rem;
+    padding-bottom: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    font-family: $font-stack;
+    color: $light-cyan;
+    background-color: $dark-grayish-blue;
+  
+    h1{
+      color: $neon-green;
+    }
+    p{
+      margin: 1rem 0;
+      font-size: $font-size-quote;
+      font-weight: $font-bold;
+    }
+    picture{
+      margin: 1rem 0;
+    }
+    button{
+      position: absolute;
+      right: 42%;
+      bottom: -8%;
+      padding: 15px;
+      border-radius: 50%;
+      border: 0px;
+      background-color: $neon-green;
+      
+      &:hover{
+        box-shadow: $neon-green 0px 10px 70px 4px;
+      }
+    }
+  }
+  .attribution{
+    margin: 3rem auto;
+  }
+}
+
+
+@media (min-width:540px) { 
+  .card{
+    max-width: 500px;
+    margin: 3rem auto;
+  }
+}
