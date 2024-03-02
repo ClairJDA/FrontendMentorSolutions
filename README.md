@@ -10,6 +10,7 @@ This is my collection of solutions
 - [Profile Card](./profile-card-component-main)
 - [Article Preview Card](./article-preview-component-master)
 - [Advice Generator App](./advice-generator-app-main)
+- [Interactive Rating Component](./interactive-rating-component-main)
 - [Age Calculator](./age-calculator-app-main)
 
 ## Author

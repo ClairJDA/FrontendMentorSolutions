@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Font */
+    --global-font-family: 'Overpass', sans-serif;
+    --global-font-size: 15px;
+    --font-regular: 400;
+    --font-bold: 700;
+
+    /* Primary */
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    --Accent-Dark-Blue: hsl(212, 13%, 25%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    overflow: auto;
+    color: var(--Light-Grey);
+    background-color: var(--Very-Dark-Blue);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 390px;
+    height: 350px;
+    padding: 2rem;
+    border-radius: 15px;
+    font-size: var(--global-font-size);
+    font-family: var(--global-font-family);
+    background-image: linear-gradient(var(--Dark-Blue), hsl(210, 15%, 11%));
+}
+
+#firstcard {
+    display: flex;
+}
+
+.rating-card {
+    font-weight: var(--font-regular);
+}
+
+.rating-card h1 {
+    color: var(--White);
+    font-weight: var(--font-bold);
+}
+
+.rating-card button {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 1px solid var(--Orange);
+    border-radius: 50px;
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+button:hover {
+    color: var(--Orange);
+    border: 1px solid var(--White);
+    background-color: var(--White);
+}
+
+.radio-scale {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    background-color: var(--Accent-Dark-Blue);
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: var(--Medium-Grey);
+}
+
+input[type="radio"]:checked + label{
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+.rating-card img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--Accent-Dark-Blue);
+}
+
+/* Thank Card */
+#thankyou {
+    display: none;
+}
+
+.thank-card {
+    align-items: center;
+}
+
+.result-score {
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;
+    color: var(--Orange);
+    background-color: var(--Accent-Dark-Blue);
+}
+
+.thank-card img{
+    width: 150px;
+    height: 100px;
+}
+
+.thank-card h1 {
+    font-size: 25px;
+    color: var(--White);
+}
+
+.thank-card p {
+    text-align: center;
+}
+
+@media (max-width: 450px) {
+    .card {
+        width: 330px;
+    }
+}
