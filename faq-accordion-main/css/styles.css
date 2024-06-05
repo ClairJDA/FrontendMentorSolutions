@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+  --accent-purple: rgb(204, 0, 255);
+
+  --font-bold: 700;
+  --font-semibold: 600;
+  --font-regular: 400;
+}
+
+@font-face {
+  font-family: "WorkSans-Italic";
+  src: url(../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  height: 100dvh;
+  background-color: var(--light-pink);
+  background-image: url(../assets/images/background-pattern-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section{
+  width: 340px;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 7px;
+  font-family: "WorkSans";
+}
+section h1{
+  color: var(--dark-purple);
+}
+
+.bullet, .icons{
+  width: 20px;
+}
+.topic{
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid var(--light-pink);
+}
+.topic h2{
+  font-size: 14px;
+}
+.topic p{
+  font-size: 12px;
+  margin-top: 5px;
+  color: var(--grayish-purple);
+}
+.topic:last-child{
+  border-bottom: none;
+}
+.question{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* STATE */
+.question:hover{
+  color: var(--accent-purple);
+}
+.inactive{
+  display: none;
+}
+.minus{
+  content: url(../assets/images/icon-minus.svg);
+}
+
+@media (min-width: 431px) {
+  body{
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+  }
+  section{
+    width: 450px;
+  }
+}
