@@ -12,6 +12,7 @@ This is my collection of solutions
 - [Advice Generator App](./advice-generator-app-main)
 - [Interactive Rating Component](./interactive-rating-component-main)
 - [Age Calculator](./age-calculator-app-main)
+- [FAQ Accordion](./faq-accordion-main/)
 
 ## Author
 
