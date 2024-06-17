@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary */
+  --strong-cyan: hsl(172, 67%, 45%);
+
+  /* Neutral */
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+
+  --primary-font: "Space Mono", monospace;
+  --font-bold: 700;
+}
+body{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--primary-font);
+    font-weight: var(--font-bold);
+    color: var(--dark-grayish-cyan);
+    background-color: var(--light-grayish-cyan);
+}
+body>h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.card{
+    width: 360px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+.card input{
+    width: 100%;
+}
+input[type="text"]{
+    padding: 5px 15px;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    font-weight: var(--font-bold);
+    text-align: right;
+    color: var(--very-dark-cyan);
+    border: 1px solid var(--very-light-grayish-cyan);
+    background-color: var(--very-light-grayish-cyan);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+}
+
+input[type="radio"]{
+    display: none;
+}
+#billAmountField{
+    background-image: url(../images/icon-dollar.svg);
+} 
+#peopleNumField{
+    background-image: url(../images/icon-person.svg);
+}
+#billAmountField::placeholder, #peopleNumField::placeholder{
+    color: var(--light-grayish-cyan);
+}
+.options label{
+    display: inline-block;
+    width: 150px;
+    margin: 5px 0;
+    padding: 5px;
+    text-align: center;
+    color: var(--white);
+    border-radius: 3px;
+    background-color: var(--very-dark-cyan);
+}
+
+#customTipField{
+    width: 160px;
+    text-align: center;
+}
+#customTipField::placeholder{
+    color: var(--very-dark-cyan);
+}
+.item{
+    margin-top: 10px; 
+}
+.output{
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: var(--very-dark-cyan);
+}
+.label{
+    color: var(--white);
+}
+.label span{
+    color: var(--dark-grayish-cyan);
+}
+.result{
+    color: var(--strong-cyan);
+}
+
+.align{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.output .label{
+    display: inline-block;
+    font-size: 14px;
+}
+.output .result{
+    display: inline-block;
+}
+.output button{
+    width: 100%;
+    padding: 7px;
+    margin-top: 20px;
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid var(--dark-grayish-cyan);
+    color: var(--very-dark-cyan);
+    background-color: var(--dark-grayish-cyan);
+}
+.attribution{
+    display: none;
+}
+
+
+/* Active State */
+input[type="text"]:focus{
+    outline: 2px solid var(--strong-cyan);
+}
+.options label:hover{
+    color: var(--very-dark-cyan);
+    background-color: var(--light-grayish-cyan);
+}
+input[type="radio"]:checked + label{
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
+}
+.output button:hover{
+    background-color: var(--light-grayish-cyan);
+}
+.output button:focus{
+    border: 1px solid var(--strong-cyan);
+    background-color: var(--strong-cyan);
+}
+
+/* Error State */
+.error{
+    outline: 2px solid red;
+}
+.inactive{
+    display: none;
+}
+.msg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item span{
+    font-size: 12px;
+    font-weight: 600;
+    color: red;
+}
+
+@media (min-width: 760px) {
+    .card{
+        display: flex;
+        column-gap: 10px;
+        width: 670px;
+        border-radius:10px;
+    }
+    #customTipField{
+        font-size: 14px;
+    }
+    .options label, #customTipField{
+        width: 85px;
+    }
+    .input, .output{
+        flex: 1;
+    }
+    .attribution{
+        display: block;
+        margin-top: 30px;
+    }
+}
