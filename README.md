@@ -13,6 +13,7 @@ This is my collection of solutions
 - [Interactive Rating Component](./interactive-rating-component-main)
 - [Age Calculator](./age-calculator-app-main)
 - [FAQ Accordion](./faq-accordion-main/)
+- [Tip Calculator](./tip-calculator-app-main)
 
 ## Author
 
