@@ -14,6 +14,7 @@ This is my collection of solutions
 - [Age Calculator](./age-calculator-app-main)
 - [FAQ Accordion](./faq-accordion-main/)
 - [Tip Calculator](./tip-calculator-app-main)
+- [Social Proof section](./social-proof-section-react)
 
 ## Author
 
