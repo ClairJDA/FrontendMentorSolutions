@@ -1,0 +1,17 @@
+.container{
+    position:  absolute;
+    border-radius: 3px;
+    color: var(--very-dark-blue-headings);
+    background-color: var(--white-text);
+}
+.menuList{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.inactive{
+    display: none;
+}
+.active{
+    display: inline-block;
+}

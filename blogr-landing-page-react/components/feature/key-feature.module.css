@@ -1,0 +1,88 @@
+.container {
+  position: relative;
+  margin-top: 30%;
+  padding: 160px 40px 70px;
+  text-align: center;
+  background-image: url("../../asset/bg-pattern-circles.svg"),
+    var(--bg-body-gradient);
+  background-size: 100% 83%, cover;
+  background-position-y: -150%, center;
+  background-repeat: no-repeat;
+  border-radius: 0 100px 0 100px;
+}
+.describe {
+  margin: 15px;
+  color: var(--white-text);
+}
+.describe h1 {
+  margin: 20px 0px;
+}
+.imageStyle {
+  z-index: 99;
+  width: 90%;
+  height: auto;
+  position: absolute;
+  top: -30%;
+  left: 7%;
+}
+
+@media (max-width: 360px) {
+  .imageStyle {
+    top: -25%;
+  }
+}
+
+@media (min-width: 412px) {
+  .container {
+    margin-top: 34%;
+  }
+  .imageStyle {
+    top: -40%;
+  }
+}
+@media (min-width: 450px) {
+  .container {
+    margin-top: 40%;
+  }
+  .imageStyle {
+    top: -63%;
+  }
+}
+
+@media (min-width: 750px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0;
+    padding: 30px 40px;
+    text-align: left;
+    background-size: 70% 100%, cover;
+    background-position-y: top, center;
+    background-position-x: -75%, center;
+  }
+  .imageStyle {
+    width: 50%;
+    top: -10%;
+    left: 0%;
+  }
+  .describe {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .imageStyle {
+    width: 40%;
+  }
+}
+@media (min-width: 960px) {
+  .imageStyle {
+    width: 35%;
+  }
+}
+@media (min-width: 971px) {
+  .container {
+    margin-top: 10%;
+    padding: 50px 40px;
+  }
+}
