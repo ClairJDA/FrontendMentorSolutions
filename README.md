@@ -15,6 +15,7 @@ This is my collection of solutions
 - [FAQ Accordion](./faq-accordion-main/)
 - [Tip Calculator](./tip-calculator-app-main)
 - [Social Proof section](./social-proof-section-react)
+- [State Preview Card](./stats-preview-card)
 
 ## Author
 
