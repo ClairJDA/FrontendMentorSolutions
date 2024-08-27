@@ -21,7 +21,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop ScreenShot](./screenshot/desktop-snapshot.PNG)
+![Mobile ScreenShot](./screenshot/momile-snapshot.PNG)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
@@ -31,7 +32,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [here](https://66cdac92a9c940d9ca1ba59c--majestic-belekoy-ef30b9.netlify.app/)
 
 ### Built with
 
