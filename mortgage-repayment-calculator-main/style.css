@@ -1,0 +1,316 @@
+:root {
+  /* Primary Colors */
+  --lime: hsl(61, 70%, 52%);
+  --lime-light: hsla(61, 70%, 52%, 0.123);
+  --red: hsl(4, 69%, 50%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --slate-100: hsl(202, 86%, 94%);
+  --slate-300: hsl(203, 41%, 72%);
+  --slate-500: hsl(200, 26%, 54%);
+  --slate-700: hsl(200, 24%, 40%);
+  --slate-900: hsl(202, 55%, 16%);
+  --slate-900-alpha: hsla(202, 54%, 7%, 0.836);
+
+  /* Typography */
+  --font-family: "Plus Jakarta Sans", sans-serif;
+  --font-size-paragraph: 16px;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /* Layout */
+  --mobile: 375px;
+  --desktop: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-medium);
+  background-color: var(--slate-100);
+}
+h1 {
+  font-size: 1rem;
+  font-weight: var(--font-bold);
+}
+
+.attribution {
+  display: none;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Form Container */
+.form-container {
+  /* min-height: 488px; */
+  /* height: 59%; */
+  min-height: 59%;
+  height: auto;
+  padding: 1.5rem;
+  font-size: 0.7rem;
+  font-weight: var(--font-bold);
+  color: var(--slate-700);
+  background-color: var(--white);
+}
+.form-container h1 {
+  margin: 0.5rem;
+  color: var(--slate-900);
+}
+.input-item, button[type="submit"], button[type="reset"] {
+  margin: 0.5rem;
+}
+.option, input[type="text"], button[type="submit"] {
+  width: 100%;
+}
+input[type="text"] {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--slate-300);
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+input[type="text"]:focus {
+  outline: 1px solid var(--lime);
+}
+
+/* Custom Input Text Field */
+.input-item {
+  position: relative;
+}
+#mortgageAmount {
+  padding-left: 2.3rem;
+}
+#mortgageAmount, #mortgageTerm, #interestRate {
+  font-weight: var(--font-bold);
+  color: var(--slate-700);
+}
+input[type="text"]:focus + #pound-sign,
+input[type="text"]:focus + #percent-sign,
+input[type="text"]:focus + #years-sign {
+  background-color: var(--lime);
+  border: 1px solid var(--lime);
+}
+#pound-sign, #percent-sign, #years-sign {
+  position: absolute; 
+  top: 1.4rem; 
+  padding: 0.44rem 0.5rem;
+  font-size: 0.9rem;
+  background-color: var(--slate-100);
+  border: 1px solid var(--slate-300);
+}
+#pound-sign {
+  left: 0;
+  border-right: 1px solid var(--slate-100);
+  border-radius: 5px 0 0 5px;
+}
+#percent-sign, #years-sign {
+  right: 0;
+  border-left: 1px solid var(--slate-100);
+  border-radius: 0 5px 5px 0;
+}
+
+/* Radio Button */
+.option {
+  position: relative;
+  border: 1px solid var(--slate-900);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+.option label {
+  padding-left: 1.2rem;
+  color: var(--slate-900);
+  font-size: 0.9rem;
+  font-weight: var(--font-bold);
+}
+.option:has([type="radio"]:checked) {
+  background-color: var(--lime-light);
+  border: 1px solid var(--lime);
+}
+
+/* Hide the default radio button */
+.option input {
+  position: absolute;
+  height: 30px;
+  width: 10rem;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.5rem;
+  height: 16px;
+  width: 16px;
+  background-color: var(--white);
+  border: 2px solid var(--lime);
+  border-radius: 50%;
+}
+/* Hide checkmark when not clicked*/
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show checkmark when clicked*/
+.option input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the indicator (dot/circle) */
+.option .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border-radius: 50%;
+  background: var(--lime);
+}
+
+/* Submit Button */
+button[type="submit"] {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 50px;
+  color: var(--slate-900);
+  background-color: var(--lime);
+  font-size: 0.9rem;
+  font-weight: var(--font-bold);
+}
+img.icon {
+  vertical-align: sub;
+}
+button[type="reset"] {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: var(--slate-700);
+}
+
+/* Result Display */
+.results-container {
+  min-height: 344px;
+  height: 41%;
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--slate-900);
+}
+.results-container p {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  color: var(--slate-300);
+}
+
+/* Display Results */
+#default {
+  display: block;
+  padding-top: 1rem;
+}
+
+/* Calculated Result */
+#calculated-result {
+  display: none;
+  text-align: left;
+}
+#calculated-result h1 {
+  margin: 0 1rem;
+}
+.results {
+  border-radius: 10px;
+  border-top: 3px solid var(--lime);
+  background-color: var(--slate-900-alpha);
+}
+hr {
+  margin: 0.5rem 1rem;
+  border-top: none;
+}
+#monthly {
+  font-size: 1.5rem;
+  font-weight: var(--font-bold);
+  color: var(--lime);
+}
+#total {
+  font-size: 1rem;
+  font-weight: var(--font-bold);
+  color: var(--white);
+}
+
+/* Hover State */
+input[type="text"]:hover, button[type="submit"]:hover, button[type="reset"]:hover{
+  cursor: pointer;
+}
+
+/* Error State */
+input[type="text"].error {
+  border: 1px solid var(--red);
+}
+input[type="text"].error + #pound-sign,
+input[type="text"].error + #percent-sign,
+input[type="text"].error + #years-sign {
+  color: var(--white);
+  background-color: var(--red);
+  border: 1px solid var(--red);
+}
+.errorMsg {
+  color: var(--red);
+  font-size: 0.7rem;
+  font-weight: var(--font-bold);
+}
+
+@media (min-width: 541px) {
+
+  .container {
+    max-width: 700px;
+    height: auto;
+    margin: 5rem auto;
+    display: flex;
+    border-radius: 20px;
+    overflow: clip;
+    background-color: var(--white);
+  }
+  .form-container {
+    width: 50%;
+    min-height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  #mortgage, #interest {
+    width: 50%;
+  }
+  .results-container {
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 0 60px;
+  }
+  .default {
+    height: auto;
+  }
+  .attribution {
+    display: block;
+  }
+}
