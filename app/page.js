@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import Header from "@/components/header";
-import Intro from "@/components/Intro";
+import Intro from "@/components/intro";
 import Testimonials from "@/components/testimonials";
 import Outro from "@/components/outro";
 import Footer from "@/components/footer";
