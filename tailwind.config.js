@@ -7,9 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        overpass: ["var(--font-overpass)", "sans-serif"],
+        ubuntu: ["var(--font-ubuntu)", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
       },
     },
   },
