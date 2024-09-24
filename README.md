@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [URL here](https://your-live-site-url.com)
+- Live Site URL: [URL here](https://project-blogrpage--incredible-raindrop-799fc0.netlify.app/)
 
 ### Built with
 
