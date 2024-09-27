@@ -7,9 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        publicSans: ["var(--ff-pubulic-sans)", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        heading: "var(--dark-blue)",
+        paragraph: "var(--grayish-blue)",
+        limeGreen: "var(--lime-green)",
+        brightCyan: "var(--bright-cyan)",
+        lightgray: {
+          100: "var(--very-light-gray)",
+          200: "var(--light-grayish-blue)",
+        }
       },
     },
   },
