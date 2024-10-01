@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,19 +7,89 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Primary */
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+
+  /* Neutral */
+  --light-grayish-cyan-background-: hsl(180, 52%, 96%);
+  --light-grayish-cyan-Filter-tablets: hsl(180, 31%, 95%);
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+
+  /* Typography */
+  --font-league-spartan: "League Spartan", sans-serif;
+  --fz-body: 15px;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Screens */
+  --mobile: 375px;
+  --desktop: 1440px;
 }
 
 body {
+  height: 100vh;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-league-spartan);
+  font-size: var(--fz-body);
+}
+
+.tag {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0 0.25rem;
+  padding-left: 0.25rem;
+  font-weight: var(--fw-bold);
+  border-radius: 0.125rem;
+  background: var(--light-grayish-cyan-Filter-tablets);
+  color: var(--desaturated-dark-cyan);
+}
+.tag:hover {
+  background: var(--desaturated-dark-cyan);
+  color: white;
+}
+
+.tag-filter {
+  display: inline-block;
+  height: 22.5px;
+  padding: 0 0.25rem;
+  font-weight: var(--fw-bold);
+  border-radius: 0.125rem;
+  background: var(--light-grayish-cyan-Filter-tablets);
+  color: var(--desaturated-dark-cyan);
+}
+.tag-filter-remove {
+  height: 22px;
+  display: inline-block;
+  padding: 0.3rem 0.1rem;
+  border-radius: 0 0.125rem 0.125rem 0;
+  background: var(--desaturated-dark-cyan);
+  color: var(--light-grayish-cyan-Filter-tablets);
+}
+.tag-filter-remove:hover {
+  background: var(--very-dark-grayish-cyan);
+}
+
+
+.label {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0 0.75rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: var(--light-grayish-cyan-Filter-tablets);
+}
+.new-label {
+  background: var(--desaturated-dark-cyan);
+}
+
+.featured-label {
+  background: var(--very-dark-grayish-cyan);
+}
+.featured-border{
+  border-left: solid 4px var(--desaturated-dark-cyan);
 }
 
 @layer utilities {

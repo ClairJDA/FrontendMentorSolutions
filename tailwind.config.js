@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        leagueSpartan: ["var(--font-league-spartan)"],
+      },
     },
   },
   plugins: [],
